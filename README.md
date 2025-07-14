@@ -62,7 +62,8 @@ pip install -r requirements.txt
 ### 3. Add YOLO Model Weights
 Place your YOLO .pt model file inside the model/ directory (e.g., model/best.pt).
 
-▶️ Running the Application
+
+### ▶️ Running the Application
 Option A: Using Streamlit
 streamlit run app.py
 Access at: http://localhost:8501
@@ -72,43 +73,34 @@ python app.py
 Access at: http://localhost:5000
 
 
-💡 How It Works
+### 💡 How It Works
 User uploads an image.
-
 helper.py loads the YOLO model and runs inference.
-
 Detections (labels and bounding boxes) are applied to the image.
-
 Annotated image is returned and displayed in the browser.
 
-⚙️ Configuration
+### ⚙️ Configuration
 Model: Change or update model/best.pt with your custom-trained weights.
-
 Confidence Threshold: Adjust in helper.py (e.g., CONFIDENCE_THRESHOLD = 0.4)
-
 Class Mapping: Modify label map inside helper file if your classes differ.
-
 UI Themes: Use Streamlit configuration or Flask templating for design customization.
 
-🐳 Docker Deployment (Optional)
+### 🐳 Docker Deployment (Optional)
 docker build -t trash-detector .
 docker run -p 8501:8501 trash-detector
 
-🧪 Testing
+### 🧪 Testing
 pytest
 
-🔭 Future Enhancements
+### 🔭 Future Enhancements
 🎥 Live webcam or video stream support
-
 🌐 REST API for mobile or remote submission
-
 📊 Detection logs and dashboard analytics
-
 📁 Batch processing for multiple images
-
 💡 Integration with alert or scheduling systems
-
 🤝 Contribution Guide
+
+
 We welcome contributions!
 Fork the repository
 Create a new branch (feat/your-feature)
