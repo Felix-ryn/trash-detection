@@ -56,10 +56,10 @@ cd trash-detection```
 
 ### 2. Setup Environment
 python3 -m venv venv
-source venv/bin/activate      # On Windows: venv\Scripts\activate
+source venv/bin/activate   
 pip install -r requirements.txt
 
-###3. Add YOLO Model Weights
+### 3. Add YOLO Model Weights
 Place your YOLO .pt model file inside the model/ directory (e.g., model/best.pt).
 
 ▶️ Running the Application
